@@ -1,7 +1,8 @@
 hex = input("Enter your hexadecimal number : ")
 
+#FOR NUMBERS CONTAINING FRACTIONAL PART
 if '.' in hex:
-    l = []
+    l = []                             #TAKING EMPTY LIST TO SEPARATE INTEGER AND FRACTIONAL VALUES
     l2 = []
     l1 = hex.split('.')
 
@@ -29,7 +30,7 @@ if '.' in hex:
                 b1 = b1+y
 
     print("Binary of your given hexadecimal number is : ",b+'.'+b1)
-
+# IF THERE IS NO FRACTIONAL PART IN THE HEXADECIMAL NUMBER
 else:
     l = []
     for i in range(len(hex)):
